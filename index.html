@@ -40,7 +40,7 @@
 							<div class="6u 12u$(medium)">
 								<header class="major">
 									<h2>About Me</h2>
-									<div class="11u"><span class="image fit"><img src="images/maria.jpg" style="max-width: 500px" alt="" /></span></div>
+									<div class="11u"><span class="image fit"><img src="images/maria.jpg" style="max-width: 750px" alt="" /></span></div>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
@@ -49,7 +49,7 @@
 								My research focuses on reinforcement learning, contextual bandits and causal inference. 
 								I am advised by  <a href="http://web.stanford.edu/~bvr/" target="_blank">Benjamin Van Roy</a> and <a href="https://people.stanford.edu/athey/" target="_blank">Susan Athey</a>. 
 								My PhD is funded by the &quot;<a href="https://www.linkedin.com/in/nick-arvanitidis-332b541" target="_blank">Arvanitidis</a>&quot; <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank"> Stanford Graduate Fellowship</a> in Memory of <a href="https://en.wikipedia.org/wiki/William_Linvill" target="_blank">William K. Linvill</a> and by the <a href="http://www.onassis.org/en/" target="_blank">Onassis Foundation Graduate Fellowship</a>.
-
+								
 								<p align="justify">
 								In 2015, I received a MSc in Operations Research at Stanford University, graduating first of my class. 
 								In 2014, I received a BSc and MSc in Electrical Engineering &amp; Computer Science from National Technical University of Athens (<a href="http://www.ntua.gr/en/" target="_blank">NTUA</a>), Greece, graduating with the highest GPA in NTUA's 200-year history. 
@@ -57,6 +57,9 @@
 								In 2016, I led the design of the multi-touch attribution product of <a href="http://www.krux.com" target="_blank">Krux</a> (now Salesforce Data Management Platform).
 								I have been the recipient of the Intel Honorary Award, the Google <a href="http://anitab.org/awards-grants/" target="_blank">Anita Borg Memorial Award</a>, the Google Excellence Award, and the Stanford Outstanding Academic Achievement Award.</p>
 								
+								<p align="justify">
+								In June 2018, I joined the <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Machine Learning group at Microsoft Research NYC</a> through September 2018.
+
 								<p align="justify">
 								I enjoy swimming, travelling across the world with great company, and exploring impressionist and surrealist art.</p>
 
@@ -87,6 +90,27 @@
 							<!-- <p>Machine Learning and more...</p> -->
 						</header>
 						<div class="feature-grid">
+													<div class="feature">
+								<div class="image rounded">
+								  <img src="images/robots.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Scalable Coordinated Exploration in Concurrent Reinforcement Learning</h4>
+									</header>
+<p><i>Maria&nbsp;Dimakopoulou, Ian&nbsp;Osband, Benjamin&nbsp;Van&nbsp;Roy</i></p>
+We consider a team of reinforcement learning agents that concurrently operate in a
+common environment, and we develop an approach to efficient coordinated exploration
+that is suitable for problems of practical scale. Our approach builds on seed sampling (Dimakopoulou and Van Roy, 2018)
+and randomized value function learning (Osband et al., 2016). We demonstrate that, for simple tabular
+contexts, the approach is competitive with previously proposed tabular model learning
+methods (Dimakopoulou and Van Roy, 2018). With a higher-dimensional problem and a neural network value function
+representation, the approach learns quickly with far fewer agents than alternative
+exploration schemes.<br>
+[<a href="https://arxiv.org/pdf/1805.08948.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
+
 							<div class="feature">
 								<div class="image rounded">
 								  <img src="images/cubist.jpg" alt="" /></div>
@@ -94,8 +118,8 @@
 									<header>
 										<h4>Coordinated Exploration in Concurrent Reinforcement Learning</h4>
 									</header>
-<p><i>Maria&nbsp;Dimakopoulou, Benjamin&nbsp;Van&nbsp;Roy</i></p>
-<p>We consider a team of reinforcement learning agents that concurrently learn to operate in a common environment, while sharing data in real-time. We identify three properties that are essential to efficient coordinated exploration: real-time adaptivity to shared observations, commitment to carry through with action sequences that reveal new information, and diversity across learning opportunities pursued by different agents. We demonstrate that optimism-based approaches fall short with respect to diversity, while naive extensions of Thompson sampling lack commitment. We propose seed sampling, a novel extension of PSRL that meets these properties, offers a general approach to designing effective coordination algorithms for concurrent reinforcement learning and has substantial advantages over alternative exploration schemes.<br>
+<p><i>Maria&nbsp;Dimakopoulou, Benjamin&nbsp;Van&nbsp;Roy (ICML&nbsp;2018;&nbsp;long&nbsp;talk)</i></p>
+<p>We consider a team of reinforcement learning agents that concurrently learn to operate in a common environment, while sharing data in real-time. We identify three properties that are essential to efficient coordinated exploration: real-time adaptivity to shared observations, commitment to carry through with action sequences that reveal new information, and diversity across learning opportunities pursued by different agents. We demonstrate that optimism-based approaches fall short with respect to diversity, while naive extensions of Thompson sampling lack commitment. We propose seed sampling that offers a general approach to designing effective coordination algorithms for concurrent reinforcement learning and has substantial advantages over alternative exploration schemes.<br>
 [<a href="https://arxiv.org/abs/1802.01282" target="_blank">Paper</a>]
 [<a href="https://youtu.be/xjGK-wm0PkI" target="_blank">Demo</a>]
 </p>
@@ -109,20 +133,22 @@
 										<h4>Estimation Considerations in Contextual Bandits</h4>
 									</header>
 <p><i>Maria&nbsp;Dimakopoulou, Susan&nbsp;Athey, Guido&nbsp;Imbens</i></p>
-<p> We study a new consideration for the exploration vs. exploitation framework which is that the way exploration is conducted in the present may affect the bias and variance in the potential outcome model estimation in subsequent stages of learning. We show that contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly in the presence of rich heterogeneity or complex outcome models, which can lead to difficult estimation problems along the path of learning. We propose new contextual bandit designs, combining parametric and nonparametric statistical estimation methods with causal inference methods in order to reduce the estimation bias that results from adaptive treatment assignment and provide empirical evidence that guides the choice among the alternatives in different scenarios.<br>
+<p> We study a new consideration for the exploration vs. exploitation framework which is that the way exploration is conducted in the present may affect the bias and variance in the potential outcome model estimation in subsequent stages of learning. We show that contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly in the presence of rich heterogeneity or complex outcome models, which can lead to difficult estimation problems along the path of learning. We propose new contextual bandit designs, combining parametric and nonparametric statistical estimation methods with causal inference methods in order to reduce the estimation bias and provide empirical evidence that guides the choice among the alternatives in different scenarios.<br>
 [<a href="https://arxiv.org/abs/1711.07077" target="_blank">Paper</a>]
 </p>
 								</div>
 							</div>
-							<div class="feature">
+							
+														<div class="feature">
 								<div class="image rounded">
 								  <img src="images/wireless.jpg" alt="" /></div>
 								<div class="content">
 									<header>
-										<h4>Market-based dynamic service mode switching in virtualized wireless networks</h4>
+										<h4>Market-based dynamic service mode switching in wireless networks</h4>
 									</header>
-<p><i>Maria&nbsp;Dimakopoulou, Nicholas&nbsp;Bambos, Martin&nbsp;Valdez-Vivas, John&nbsp;Apostolopoulos</i></p>
-<p>We consider a virtualized wireless networking architecture, where infrastructure access points of different carriers form a marketplace of resources and bid service deals to a mobile device. At each point in time the mobile evaluates the available service deals and dynamically decides which one to accept and use in the next transmission interval. Its objective is to minimize the long term cumulative service cost and latency cost to transmit packets in its buffer. We develop a model of this architecture, which allows for the formulation and computation of the optimal control for the mobile to accept an offered deal amongst many and switch into the corresponding service mode.<br>
+<p><i>Maria&nbsp;Dimakopoulou, Nicholas&nbsp;Bambos, Martin&nbsp;Valdez-Vivas, John&nbsp;Apostolopoulos (PIMRC&nbsp;2017)</i></p>
+<p>We consider a virtualized wireless networking architecture, where infrastructure access points of different carriers form a marketplace of resources and bid service deals to a mobile device. At each point in time the mobile evaluates the available service deals and dynamically decides which one to accept and use in the next transmission interval. Its objective is to minimize the long term cumulative service cost and latency cost to transmit packets in its buffer. We develop a model of this architecture, which allows for the formulation and computation of the optimal control for the mobile to accept an offered deal amongst many and switch into the corresponding service mode. The performance of the optimal
+and low-complexity heuristic controls is probed via simulation.<br>
 [<a href="http://ieeexplore.ieee.org/document/8292195/" target="_blank">Paper</a>]
 </p>
 								</div>
@@ -134,12 +160,13 @@
 									<header>
 										<h4>Reliable and Efficient Performance Monitoring in Linux</h4>
 									</header>
-<p><i>Maria&nbsp;Dimakopoulou, St&eacute;phane&nbsp;Eranian, Nectarios&nbsp;Koziris, Nicholas&nbsp;Bambos</i></p>
+<p><i>Maria&nbsp;Dimakopoulou, St&eacute;phane&nbsp;Eranian, Nectarios&nbsp;Koziris, Nicholas&nbsp;Bambos (Supercomputing&nbsp;2016)</i></p>
 <p>We address a published eratum in the Performance Monitoring Unit (PMU) of Intel Sandy Bridge, Ivy Bridge and Haswell processors with hyper-threading enabled which causes cross hyper-thread hardware counter corruption and may produce unreliable results. We propose a cache-coherence style protocol, which we implement in the Linux kernel to address the issue by introducing cross hyper-thread dynamic event scheduling. Additionally, we improve event scheduling efficiency by introducing a bipartite graph matching algorithm which optimally schedules events onto hardware counters consistently. The improvements have been contributed to the upstream Linux kernel&nbsp;v4.1.<br>
 [<a href="http://ieeexplore.ieee.org/document/7877112/" target="_blank">Paper</a>]
 </p>
 								</div>
 							</div>
+
 
 						</div>
 					</div>
@@ -152,16 +179,29 @@
                         <h2>News</h2>
                     </header>
 
+<h3>6/7/2018</h3>
+<p>
+<div class="image" > <img src="images/icml.jpg" alt="" style="width:40%; height: auto; display:inline-block;"/></div>
+<br>
+I will be travelling to Stockholm to present <a href="https://arxiv.org/abs/1711.07077" target="_blank">Coordinated Exploration in Concurrent Reinforcement Learning</a> <br> as a long talk in ICML 2018.</p>
+					
+<h3>5/25/2018</h3>
+<p>
+<div class="image" > <img src="images/netflix.jpg" alt="" style="width:25%; height: auto; display:inline-block;"/></div>
+<br>
+The slides from my seminar talk at Netflix can be found <a href="https://docs.google.com/presentation/d/1c9AFvRdpaLNvsUscZFVGCYUBnjbFrSM_QFEOCvttBqU/" target="_blank">here</a>.
+</p>
+					
 <h3>3/5/2018</h3>
 <p>
-<div class="image" > <img src="images/demo.png" alt="" style="width:60%; height: auto; display:inline-block;"/></div>
+<div class="image" > <img src="images/demo.png" alt="" style="width:40%; height: auto; display:inline-block;"/></div>
 <br>
 An <a href="https://youtu.be/xjGK-wm0PkI" target="_blank"> animated demo</a> has been uploaded showcasing seed sampling from the paper <br> "Coordinated Exploration in Concurrent Reinforcement Learning".</p>
 
 <br>
 <h3>2/2/2018</h3>
 <p>
-<div class="image center"> <img src="images/msr.png" alt="" style="width:60%; height: auto; display:inline-block;"/></div>
+<div class="image center"> <img src="images/msr.png" alt="" style="width:35%; height: auto; display:inline-block;"/></div>
 <br>
 From June to September 2018, I will join the <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Machine Learning group at Microsoft Research NYC</a>.</p>
 
