@@ -45,8 +45,8 @@
 							</div>
 							<div class="6u$ 12u$(medium)">
 								<p align="justify">
-								I am currently a Senior Research Scientist at <a href="https://research.netflix.com/" target="_blank">Netflix and my research focuses on reinforcement learning, contextual bandits and causal inference for personalization.
-								Previously, I obtained my PhD in <a href="https://msande.stanford.edu/" target="_blank">Management Science &amp; Engineering department</a> at <a href="https://stanford.edu/" target="_blank"> Stanford University</a>, 
+								I am currently a Senior Research Scientist at <a href="https://research.netflix.com/" target="_blank">Netflix</a> and my research focuses on reinforcement learning, contextual bandits and causal inference for personalization.
+								Previously, I obtained my PhD in reinforcement learning at <a href="https://stanford.edu/" target="_blank"> Stanford University</a>, 
 								where I was advised by  <a href="http://web.stanford.edu/~bvr/" target="_blank">Benjamin Van Roy</a> and <a href="https://people.stanford.edu/athey/" target="_blank">Susan Athey</a>. 
 								
 								<p align="justify">
@@ -58,9 +58,9 @@
 								
 								<p align="justify">
 								I have been the recipient of the &quot;<a href="https://www.linkedin.com/in/nick-arvanitidis-332b541" target="_blank">Arvanitidis</a>&quot; <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank"> Stanford Graduate Fellowship</a> in Memory of <a href="https://en.wikipedia.org/wiki/William_Linvill" target="_blank">William K. Linvill</a>,
-								the <a href="http://www.onassis.org/en/" target="_blank">Onassis Foundation Graduate Fellowship</a>.
+								the <a href="http://www.onassis.org/en/" target="_blank">Onassis Foundation Graduate Fellowship</a>,
 								the Intel Honorary Award, the Google <a href="http://anitab.org/awards-grants/" target="_blank">Anita Borg Memorial Award</a>, the Google 
-								Excellence Award, the Stanford Graduate Fellowship in Science and Engineering, and the Stanford Outstanding Academic Achievement Award.</p>
+								Excellence Award, and the Stanford Outstanding Academic Achievement Award.</p>
 								
 								<p align="justify">
 								I enjoy swimming, travelling across the world with great company, and exploring impressionist and surrealist art.</p>
@@ -92,9 +92,56 @@
 							<!-- <p>Machine Learning and more...</p> -->
 						</header>
 						<div class="feature-grid">
-						
-						
-											<div class="feature">
+		
+		
+<div class="feature">
+								<div class="image rounded">
+								  <img src="images/slate.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Marginal Posterior Sampling for Slate Bandits</h4>
+									</header>
+<p><i>Maria&nbsp;Dimakopoulou, Nikos&nbsp;Vlassis, Tony&nbsp;Jebara (IJCAI&nbsp;2019)</i></p>
+We introduce a new Thompson sampling-based algorithm, called marginal posterior sampling, for online slate bandits, that is characterized by three key ideas. 
+First, it postulates that the slate-level reward is a monotone function of the marginal unobserved rewards of the actions in the slate's slots, which it does not attempt to estimate. 
+Second, instead of maintaining a slate-level reward posterior, it maintains posterior distributions for the marginal reward of each slot's actions. 
+Third, it optimizes at the slot-level rather than the slate-level, which makes it computationally efficient. 
+We demonstrate substantial advantages of marginal posterior sampling over alternative approaches that are widely used in the domain of web services.<br>
+[<a href="assets/docs/IJCAI2019.pdf">Paper</a>]
+</p>
+								</div>
+							</div>
+							
+													<div class="feature">
+								<div class="image rounded">
+								  <img src="images/design.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>On the Design of Estimators for Bandit Off-Policy Evaluation</h4>
+									</header>
+<p><i>Nikos&nbsp;Vlassis, Aurelien&nbsp;Bibaut, <br> Maria&nbsp;Dimakopoulou, Tony&nbsp;Jebara (ICML&nbsp;2019)</i></p>
+Off-policy evaluation is the problem of estimating
+the value of a target policy using data collected
+under a different policy. We describe a
+framework for designing estimators for bandit off-policy
+evaluation. Given a base estimator and a
+parametrized class of control variates, we seek a
+control variate in that class that reduces the risk
+of the base estimator. We derive the population
+risk as a function of the class parameters and we
+discuss some approaches for optimizing this function.
+We present our main results in the context
+of multi-armed bandits, and we decribe a simple
+design for contextual bandits that gives rise
+to an estimator that is shown to perform well in
+multi-class cost-sensitive classification datasets.<br>
+[<a href="assets/docs/ICML2019.pdf">Paper</a>]
+</p>
+								</div>
+							</div>
+				
+
+<div class="feature">
 								<div class="image rounded">
 								  <img src="images/balanced.jpg" alt="" /></div>
 								<div class="content">
@@ -103,16 +150,15 @@
 									</header>
 <p><i>Maria&nbsp;Dimakopoulou, Zhengyuan&nbsp;Zhou, Susan&nbsp;Athey, Guido&nbsp;Imbens (AAAI&nbsp;2019;&nbsp;oral)</i></p>
 Contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly 
-in the presence of rich heterogeneity or complex outcome models, which can lead to difficult estimation problems along the path of learning. 
+in the presence of rich heterogeneity or complex outcome models. 
 We develop algorithms for contextual bandits with linear payoffs that integrate balancing methods from the causal inference literature in their 
-estimation to make it less prone to problems of estimation bias. We provide the first regret bound analyses for linear contextual bandits with 
-balancing and show that our algorithms match the state of the art theoretical guarantees. We demonstrate the strong practical advantage of balanced 
+estimation to make it less prone to problems of  bias. We prove that our algorithms match the state of the art regret bound guarantees. We demonstrate the strong practical advantage of balanced 
 contextual bandits on a large number of supervised learning datasets and on a synthetic example that simulates model misspecification and prejudice in the initial training data.<br>
 [<a href="https://arxiv.org/pdf/1812.06227.pdf" target="_blank">Paper</a>][<a href="assets/docs/AAAI2019_poster.pdf">Poster</a>]
 </p>
 								</div>
 							</div>
-
+							
 													<div class="feature">
 								<div class="image rounded">
 								  <img src="images/robots.jpg" alt="" /></div>
@@ -120,7 +166,7 @@ contextual bandits on a large number of supervised learning datasets and on a sy
 									<header>
 										<h4>Scalable Coordinated Exploration in Concurrent Reinforcement Learning</h4>
 									</header>
-<p><i>Maria&nbsp;Dimakopoulou, Ian&nbsp;Osband, Benjamin&nbsp;Van&nbsp;Roy (NIPS&nbsp;2018)</i></p>
+<p><i>Maria&nbsp;Dimakopoulou, Ian&nbsp;Osband, Benjamin&nbsp;Van&nbsp;Roy (NeurIPS&nbsp;2018)</i></p>
 We consider a team of reinforcement learning agents that concurrently operate in a
 common environment, and we develop an approach to efficient coordinated exploration
 that is suitable for problems of practical scale. Our approach builds on seed sampling (Dimakopoulou and Van Roy, 2018)
@@ -134,6 +180,9 @@ exploration schemes.<br>
 								</div>
 							</div>
 
+
+
+
 							<div class="feature">
 								<div class="image rounded">
 								  <img src="images/cubist.jpg" alt="" /></div>
@@ -142,13 +191,21 @@ exploration schemes.<br>
 										<h4>Coordinated Exploration in Concurrent Reinforcement Learning</h4>
 									</header>
 <p><i>Maria&nbsp;Dimakopoulou, Benjamin&nbsp;Van&nbsp;Roy (ICML&nbsp;2018;&nbsp;long&nbsp;talk)</i></p>
-<p>We consider a team of reinforcement learning agents that concurrently learn to operate in a common environment, while sharing data in real-time. We identify three properties that are essential to efficient coordinated exploration: real-time adaptivity to shared observations, commitment to carry through with action sequences that reveal new information, and diversity across learning opportunities pursued by different agents. We demonstrate that optimism-based approaches fall short with respect to diversity, while naive extensions of Thompson sampling lack commitment. We propose seed sampling that offers a general approach to designing effective coordination algorithms for concurrent reinforcement learning and has substantial advantages over alternative exploration schemes.<br>
+<p>We consider a team of reinforcement learning agents that concurrently learn to operate in a common environment, while sharing data in real-time. 
+We identify three properties that are essential to efficient coordinated exploration: real-time adaptivity to shared observations, 
+commitment to carry through with action sequences that reveal new information, and diversity across learning opportunities pursued by different agents. 
+We demonstrate that optimism-based approaches fall short with respect to diversity, while naive extensions of Thompson sampling lack commitment. 
+We propose seed sampling that offers a general approach to designing effective coordination algorithms for concurrent reinforcement learning 
+and has substantial advantages over alternative exploration schemes.<br>
 [<a href="http://proceedings.mlr.press/v80/dimakopoulou18a/dimakopoulou18a.pdf" target="_blank">Paper</a>]
 [<a href="https://youtu.be/xjGK-wm0PkI" target="_blank">Demo</a>]
 [<a href="https://docs.google.com/presentation/d/1tKztxH5FaH2IRVtCu1escC3O51u26ok05A3xlSSwWAY/edit#slide=id.g3d32e7e0e3_0_129" target="_blank">ICML 2018 Slides</a>] [<a href="https://www.facebook.com/icml.imls/videos/429761510871703/">ICML 2018 Video</a>]
 </p>
 								</div>
 							</div>
+							
+							
+		
 							<div class="feature">
 								<div class="image rounded">
 								  <img src="images/thinker.jpg" alt="" /></div>
@@ -157,7 +214,12 @@ exploration schemes.<br>
 										<h4>Estimation Considerations in Contextual Bandits</h4>
 									</header>
 <p><i>Maria&nbsp;Dimakopoulou, Zhengyuan&nbsp;Zhou, Susan&nbsp;Athey, Guido&nbsp;Imbens</i></p>
-<p> We study a new consideration for the exploration vs. exploitation framework which is that the way exploration is conducted in the present may affect the bias and variance in the potential outcome model estimation in subsequent stages of learning. We show that contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly in the presence of rich heterogeneity or complex outcome models, which can lead to difficult estimation problems along the path of learning. We propose new contextual bandit designs, combining parametric and nonparametric statistical estimation methods with causal inference methods in order to reduce the estimation bias and provide empirical evidence that guides the choice among the alternatives in different scenarios.<br>
+<p> We study a new consideration for the exploration vs. exploitation framework which is that the way exploration is 
+conducted in the present may affect the bias and variance in the potential outcome model estimation in subsequent stages of learning. 
+We show that contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used,
+ particularly in the presence of rich heterogeneity or complex outcome models, which can lead to difficult estimation problems along the path of learning. 
+ We propose new contextual bandit designs, combining parametric and nonparametric statistical estimation methods with causal inference methods in order to 
+ reduce the estimation bias and provide empirical evidence that guides the choice among the alternatives in different scenarios.<br>
 [<a href="https://arxiv.org/abs/1711.07077" target="_blank">Paper</a>]
 </p>
 								</div>
@@ -188,10 +250,9 @@ and low-complexity heuristic controls is probed via simulation.<br>
 <p>We address a published eratum in the Performance Monitoring Unit (PMU) of Intel Sandy Bridge, Ivy Bridge and Haswell processors with hyper-threading enabled which causes cross hyper-thread hardware counter corruption and may produce unreliable results. We propose a cache-coherence style protocol, which we implement in the Linux kernel to address the issue by introducing cross hyper-thread dynamic event scheduling. Additionally, we improve event scheduling efficiency by introducing a bipartite graph matching algorithm which optimally schedules events onto hardware counters consistently. The improvements have been contributed to the upstream Linux kernel&nbsp;v4.1.<br>
 [<a href="http://ieeexplore.ieee.org/document/7877112/" target="_blank">Paper</a>]
 </p>
-								</div>
-							</div>
-
-
+							
+							
+							
 						</div>
 					</div>
 				</section>
