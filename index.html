@@ -13,14 +13,23 @@
 	</head>
 	<body class="landing">
 
-		<!-- Header -->
+		<!-- Header 1 -->
 			<header id="header" class="alt">
-				<p><h1><strong><a href="index.html">Stanford </a></strong>Reinforcement Learning</h1></p>
+				<h1> </br> <b style='color:white !important;'>Netflix &nbsp | &nbsp Stanford </b> </h1>
+
+		
+			</header>
+<!-- Header 2 -->
+			<header id="header">
+
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<!-- <li><a href="research.html">Research</a></li> -->
 						<li><a href="assets/docs/CV.pdf">CV</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="index.html">Home</a></li>
+						
 					</ul>
 				</nav>
 			</header>
@@ -30,11 +39,10 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2>Maria Dimakopoulou</h2>
-				<!-- <p>Reinforcement Learning<br /> Mice chaser</p> -->
 			</section>
 
 			<!-- About me -->
-				<section id="one" class="wrapper style1">
+				<section id="about" class="wrapper style1">
 					<div class="container 75%">
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
@@ -43,62 +51,135 @@
 									<div class="11u"><span class="image fit"><img src="images/maria.jpg" style="max-width: 750px" alt="" /></span></div>
 								</header>
 							</div>
-							<div class="6u$ 12u$(medium)">
+							<div  id="about" class="6u$ 12u$(medium)">
 								<p align="justify">
-								I am a Senior Research Scientist at <a href="https://research.netflix.com/" target="_blank">Netflix</a> and my research focuses on bandit learning, reinforcement learning and causal inference. I lead the Adaptive Experimentation research agenda, developing research methodologies that become part of production and improve the personalized ranking algorithms and the A/B testing at Netflix.
-								Previously, I obtained my PhD in reinforcement learning at <a href="https://stanford.edu/" target="_blank"> Stanford University</a>, 
-								where I was advised by  <a href="http://web.stanford.edu/~bvr/" target="_blank">Benjamin Van Roy</a> and <a href="https://people.stanford.edu/athey/" target="_blank">Susan Athey</a>. 
+I am a Senior Research Scientist at Netflix and my research lies at the intersection of adaptive learning and causal inference. I lead the Adaptive Experimentation cross-functional team of researchers, engineers and data scientists that delivers new experimentation capabilities at Netflix as an alternative to A/B testing, ranging from automated ML-based cell selection to adaptive cell allocation rates during-test to valid inference from adaptively collected data post-test. Additionally, I have taken the lead on the investment in the research area of causal bandits and have been collaborating with researchers and engineers for the widespread adoption of causal bandits across Netflix, ranging from personalized recommendations to product decision making. 
+								
+<p align="justify">
+								Previously, I obtained my PhD in reinforcement learning and causal inference at Stanford University, 
+								where I was advised by  Benjamin Van Roy and Susan Athey. 
+								Most recent honors include being named in Forbes 30 Under 30 Greece and being the recipient of the Stanford Outstanding Academic Achievement at the Doctoral Level Award.
 								
 								<p align="justify">
-								In 2015, I received a MSc in Operations Research at Stanford University, graduating first of my class. 
-								In 2014, I received a BSc and MSc in Electrical Engineering &amp; Computer Science from National Technical University of Athens (<a href="https://en.wikipedia.org/wiki/National_Technical_University_of_Athens" target="_blank">NTUA</a>), Greece, graduating with the highest GPA in NTUA's 200-year history. 
-								Between 2012 and 2015, I worked at <a href="http://research.google.com" target="_blank">Google Research</a>, focusing on the design and deployment of large-scale optimization algorithms for Google Technical Infrastructure and Google Ad Exchange. 
-								In 2016, I was a visiting researcher at <a href="http://www.krux.com" target="_blank">Krux</a> (now Salesforce Einstein), where I led the design of and launched the company's multi-touch attribution product. 
-								In 2018, I was a visiting researcher at <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Microsoft Research NYC</a>, where I worked with Miroslav Dudik and Robert Schapire on reinforcement learning and off-policy evaluation.
-								
-								<p align="justify">
-								I have been the recipient of the Stanford Outstanding Academic Achievement Award in 2019 and 2016, 
-								the Forbes 30 Under 30 Greece in 2019, 
-								the "Arvanitidis" Stanford Doctoral Fellowship from 2015 to 2018,
-								the Onassis Foundation Doctoral Fellowship from 2015 to 2018,
-								the Intel Honorary Award in 2014,
-								the Google Women Techmakers Award in 2014
-								and the Google Excellence Award in 2013. 								
-								
-								<p align="justify">
-								I enjoy swimming, travelling across the world with great company, and exploring impressionist and surrealist art.</p>
+								I enjoy tennis, swimming, traveling across the world with great company, and exploring impressionist & surrealist art.</p>
 
 							</div>
 						</div>
 					</div>
 				</section>
 
-			<!-- Two -->
-<!--
-			<section id="news" class="wrapper style2 special">
-                			<div class="container" style="max-width: 1000px; line-height: 140%;">
-
-                    			<header class="major special">
-                        			<h2>News</h2>
-                    			</header>
-
-				        <p id=""><span class="image left"><img src="images/empire.jpg" title="" alt="" style="max-width: 140px"></span>
-<p>From June to September 2018, I will join the Machine Learning group at Microsoft Research NYC.</p>
-					</div>
-			</section>
--->
-			<!-- Three -->
-				<section id="three" class="wrapper style2 special">
+			
+			<!-- Research -->
+				<section id="research" class="wrapper style2 special">
 					<div class="container">
 						<header class="major special">
 							<h2>Research</h2>
 							<!-- <p>Machine Learning and more...</p> -->
 						</header>
 						<div class="feature-grid">
+<div class="feature">
+								
+								<div class="content">
+									<header>
+										<h4>Online Multi-Armed Bandits with Adaptive Inference</h4>
+									</header>
+<p><i>Maria&nbspDimakopoulou, Zhimei&nbspRen, Zhengyuan&nbspZhou (in submission)</I></p>
+During online decision making in Multi-Armed Bandits, one needs to conduct inference
+on the true mean reward of each arm based on data collected so far at each step. However, since
+the arms are adaptively selected–thereby yielding non-iid data–conducting inference accurately
+is not straightforward. Our thesis in this paper
+is that more sophisticated inference schemes that take into account the adaptive nature of the
+sequentially collected data can unlock further performance gains, even though both UCB and
+TS type algorithms are optimal in the worst case. In particular, we propose a variant of TS-style
+algorithms–which we call doubly adaptive TS–that leverages recent advances in causal inference
+and adaptively reweights the terms of a doubly robust estimator on the true mean reward of
+each arm. Through 20 synthetic domain experiments and a semi-synthetic experiment based
+on data from an A/B test of a web service, we demonstrate that using an adaptive inferential
+scheme (while still retaining the exploration efficacy of TS) provides clear benefits in online
+decision making.
+In addition, we also provide a finite-time regret bound of doubly adaptive TS that matches (up
+to log factors) those of UCB and TS algorithms, thereby establishing that its improved practical
+benefits do not come at the expense of worst-case suboptimality.<br>
+[<a href="https://arxiv.org/pdf/2102.13202.pdf" target="_blank">Paper</a>]
+
+</p>
+								</div>
+							</div>
+
+<div class="feature">
+								
+								<div class="content">
+									<header>
+										<h4>Post-Contextual-Bandit Inference</h4>
+									</header>
+<p><i>Aurélien&nbspBibaut, Maria&nbspDimakopoulou, Nathan&nbspKallus, Antoine&nbspChambaz, Mark&nbspvan&nbspder&nbspLaan (in submission)</I></p>
+Contextual bandit algorithms are increasingly replacing non-adaptive A/B tests in
+e-commerce, healthcare, and policymaking because they can both improve outcomes for study participants and increase the chance of identifying good or even
+best policies. To support credible inference on novel interventions at the end of the
+study, nonetheless, we still want to construct valid confidence intervals on average
+treatment effects, subgroup effects, or value of new policies. The adaptive nature
+of the data collected by contextual bandit algorithms, however, makes this difficult: standard estimators are no longer asymptotically normally distributed and
+classic confidence intervals fail to provide correct coverage. While this has been
+addressed in non-contextual settings by using stabilized estimators, the contextual
+setting poses unique challenges that we tackle for the first time in this paper. We
+propose the Contextual Adaptive Doubly Robust (CADR) estimator, the first estimator for policy value that is asymptotically normal under contextual adaptive
+data collection. The main technical challenge in constructing CADR is designing
+adaptive and consistent conditional standard deviation estimators for stabilization. Extensive numerical experiments using 57 OpenML datasets demonstrate
+that confidence intervals based on CADR uniquely provide correct coverage.<br>
+[<a href="https://arxiv.org/pdf/2106.00418.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
+
+<div class="feature">
+								
+								<div class="content">
+									<header>
+										<h4>Risk Minimization from Adaptively Collected Data</h4>
+									</header>
+<p><i>Aurélien&nbspBibaut, Nathan&nbspKallus, Maria&nbspDimakopoulou, Antoine&nbspChambaz, Mark&nbspvan&nbspder&nbspLaan (in submission)</I></p>
+Empirical risk minimization (ERM) is the workhorse of machine learning, whether
+for classification and regression or for off-policy learning, but its model-agnostic guarantees can fail when we use adaptively collected data. We study a generic importance
+sampling weighted ERM algorithm for using adaptively collected data to minimize
+the average of a loss function over a hypothesis class and provide first-of-their-kind
+generalization guarantees and fast convergence rates. Our results are based on a
+new maximal inequality that leverages the importance sampling structure
+to obtain rates with the right dependence on the exploration rate. For
+regression, we provide fast rates that leverage the strong convexity of squared-error
+loss. For policy learning, we provide rate-optimal regret guarantees that close an
+open gap in the existing literature whenever exploration decays to zero, as is the
+case for bandit-collected data. An empirical investigation validates our theory.<br>
+[<a href="https://arxiv.org/pdf/2106.01723.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
+
+								
+<div class="feature">
+								
+								<div class="content">
+									<header>
+										<h4>Sequential Causal Inference in a Single World of
+Connected Units</h4>
+									</header>
+<p><i>Aurélien&nbspBibaut, Maya&nbspPetersen, Nikos&nbspVlassis, Maria&nbspDimakopoulou, Mark&nbspvan&nbspder&nbspLaan (arXiv preprint)</i></p>
+We consider adaptive designs for a trial involving N individuals that we follow along
+T time steps. We allow for the variables of one individual to depend on its past and
+on the past of other individuals. Our goal is to learn a mean outcome, averaged across
+the N individuals, that we would observe, if we started from some given initial state,
+and we carried out a given sequence of counterfactual interventions for τ time steps.
+We show how to identify a statistical parameter that equals this mean counterfactual outcome, and how to perform inference for this parameter, while adaptively
+learning an oracle design defined as a parameter of the true data generating distribution. Oracle designs of interest include the design that maximizes the efficiency for a
+statistical parameter of interest, or designs that mix the optimal treatment rule with a
+certain exploration distribution. We also show how to design adaptive stopping rules
+for sequential hypothesis testing.<br>
+[<a href="https://arxiv.org/pdf/2101.07380.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
 		
 <div class="feature">
-								<div class="image rounded">
-								  <img src="images/design.jpg" alt="" /></div>
+								
 								<div class="content">
 									<header>
 										<h4>Doubly Robust Off-Policy Evaluation with Shrinkage</h4>
@@ -119,8 +200,6 @@ estimators are highly adaptive and typically outperform state-of-the-art methods
 					
 
 <div class="feature">
-								<div class="image rounded">
-								  <img src="images/recs.png" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>ADMM SLIM: Sparse Recommendations for Many Users</h4>
@@ -135,13 +214,11 @@ In our experiments, we find that not only our approach reduces training time con
 but also achieves an up to 25% improvement in recommendation accuracy  due to better optimization. 
 Finally, we compare the approaches in experiments that simulate scenarios of cold-starting and large catalog sizes compared 
 to relatively small user base, which often occur in practice.<br>
-[<a href="assets/docs/WSDM2020.pdf">Paper</a>]
+[<a href="https://dl.acm.org/doi/pdf/10.1145/3336191.3371774">Paper</a>]
 </p>
 								</div>
 							</div>
 <div class="feature">
-								<div class="image rounded">
-								  <img src="images/slate.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Marginal Posterior Sampling for Slate Bandits</h4>
@@ -159,8 +236,6 @@ Simulation results show substantial advantages of marginal posterior sampling ov
 
 
 <div class="feature">
-								<div class="image rounded">
-								  <img src="images/balanced.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Balanced Linear Contextual Bandits</h4>
@@ -177,8 +252,6 @@ contextual bandits on a large number of supervised learning datasets and on a sy
 							</div>
 							
 <div class="feature">
-								<div class="image rounded">
-								  <img src="images/design.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>On the Design of Estimators for Bandit Off-Policy Evaluation</h4>
@@ -197,7 +270,7 @@ discuss approaches for optimizing this function.
 We present our main results in the context
 of multi-armed bandits, and we decribe a contextual bandits estimator that is shown to perform well in
 multi-class cost-sensitive classification datasets.<br>
-[<a href="assets/docs/ICML2019.pdf">Paper</a>]
+[<a href="http://proceedings.mlr.press/v97/vlassis19a/vlassis19a.pdf">Paper</a>]
 </p>
 								</div>
 							</div>
@@ -205,8 +278,6 @@ multi-class cost-sensitive classification datasets.<br>
 
 							
 													<div class="feature">
-								<div class="image rounded">
-								  <img src="images/robots.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Scalable Coordinated Exploration in Concurrent Reinforcement Learning</h4>
@@ -220,7 +291,7 @@ contexts, the approach is competitive with previously proposed tabular model lea
 methods (Dimakopoulou and Van Roy, 2018). With a higher-dimensional problem and a neural network value function
 representation, the approach learns quickly with far fewer agents than alternative
 exploration schemes.<br>
-[<a href="https://arxiv.org/pdf/1805.08948.pdf" target="_blank">Paper</a>][<a href="assets/docs/NIPS2018_poster.pdf">Poster</a>]
+[<a href="https://arxiv.org/pdf/1805.08948.pdf" target="_blank">Paper</a>][<a href="assets/docs/NIPS2018_poster.pdf">Poster</a>][<a href="demo/cartpole.html">Demo</a>]
 </p>
 								</div>
 							</div>
@@ -229,8 +300,6 @@ exploration schemes.<br>
 
 
 							<div class="feature">
-								<div class="image rounded">
-								  <img src="images/cubist.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Coordinated Exploration in Concurrent Reinforcement Learning</h4>
@@ -252,8 +321,6 @@ and has substantial advantages over alternative exploration schemes.<br>
 							
 		
 							<div class="feature">
-								<div class="image rounded">
-								  <img src="images/thinker.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Estimation Considerations in Contextual Bandits</h4>
@@ -271,8 +338,6 @@ We show that contextual bandit algorithms are sensitive to the estimation method
 							</div>
 							
 														<div class="feature">
-								<div class="image rounded">
-								  <img src="images/wireless.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Market-based dynamic service mode switching in wireless networks</h4>
@@ -285,8 +350,6 @@ and low-complexity heuristic controls is probed via simulation.<br>
 								</div>
 							</div>
 							<div class="feature">
-								<div class="image rounded">
-								  <img src="images/dc.jpg" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Reliable and Efficient Performance Monitoring in Linux</h4>
@@ -301,6 +364,30 @@ and low-complexity heuristic controls is probed via simulation.<br>
 						</div>
 					</div>
 				</section>
+<!-- Two -->
+			<section id="news" class="wrapper style1 special">
+                			<div class="container" style="max-width: 1000px; line-height: 140%;">
+
+                    			<header class="major special">
+                        			<h2> News</h2>
+                    			</header>
+<p>(Dec 14th 2021) Co-organizer of the NeurIPS 2021 Causal Sequential Decisions workshop currently accepting submissions.</p>
+<p>(Oct 25th 2021) Invited speaker at Hamsa Bastani's class at the Wharton School, University of Pennsylvania.</p>
+<p>(Jul 23rd 2021) Invited speaker and panelist at the ICML 2021 RL4RealLife workshop giving a talk on "Estimation and Exploration Considerations for Practical RL".</p>
+<p>(Jun 11th 2021) Invited speaker at the Personalization, Ranker and Search (PRS) annual summit organized by Netflix giving a joint talk with Chris Alvino and Devise Parekh on "Messaging at Netflix: Causal Modeling in Practice".</p>
+<p>(Dec 6th 2020) Invited speaker at the NeurIPS 2020 Expo giving a talk on "Slate Bandit Online Learning & Off-Policy Evaluation".</p>
+<p>(Sep 26th 2020) Co-organizer of the RecSys 2020 "Bandit and Reinforcement Learning from User Interactions" (REVEAL) workshop.</p>
+<p>(July 13th 2020) Invited speaker at the ICML 2020 WiML workshop giving a talk on "Slate Bandit Online Learning & Off-Policy Evaluation".</p>
+<p>(Oct 20th 2019) Invited speaker at INFORMS 2019 "Bandits and Reinforcement Learning" session giving a talk on "Coordinated Exploration in Concurrent Reinforcement Learning".</p>
+<p>(Sep 20th 2019) Co-organizer of the RecSys 2019 "Bandit and Reinforcement Learning from User Interactions" (REVEAL) workshop and invited speaker giving a talk on "Marginal Posterior Sampling for Slate Bandits".</p>
+<p>(Sep 16th 2019) Invited speaker at DeepMind London giving a talk on "Coordinated Exploration in Concurrent Reinforcement Learning".</p>
+
+
+
+					</div>
+			</section>
+
+
 			<!-- Four -->
 				<section id="four" class="wrapper style3 special">
 					<div class="container">
