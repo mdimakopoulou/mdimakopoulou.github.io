@@ -15,7 +15,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<h1><strong><a href="index.html">Stanford </a></strong>Reinforcement Learning</h1>
+				<p><h1><strong><a href="index.html">Stanford </a></strong>Reinforcement Learning</h1></p>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -45,22 +45,25 @@
 							</div>
 							<div class="6u$ 12u$(medium)">
 								<p align="justify">
-								I am currently a Senior Research Scientist at <a href="https://research.netflix.com/" target="_blank">Netflix</a> and my research focuses on reinforcement learning, contextual bandits and causal inference for personalization.
+								I am a Senior Research Scientist at <a href="https://research.netflix.com/" target="_blank">Netflix</a> and my research focuses on bandit learning, reinforcement learning and causal inference. I lead the Adaptive Experimentation research agenda, developing research methodologies that become part of production and improve the personalized ranking algorithms and the A/B testing at Netflix.
 								Previously, I obtained my PhD in reinforcement learning at <a href="https://stanford.edu/" target="_blank"> Stanford University</a>, 
 								where I was advised by  <a href="http://web.stanford.edu/~bvr/" target="_blank">Benjamin Van Roy</a> and <a href="https://people.stanford.edu/athey/" target="_blank">Susan Athey</a>. 
 								
 								<p align="justify">
 								In 2015, I received a MSc in Operations Research at Stanford University, graduating first of my class. 
-								In 2014, I received a BSc and MSc in Electrical Engineering &amp; Computer Science from National Technical University of Athens (<a href="http://www.ntua.gr/en/" target="_blank">NTUA</a>), Greece, graduating with the highest GPA in NTUA's 200-year history. 
-								Between 2012 and 2015, I spent time at <a href="http://research.google.com" target="_blank">Google Research</a>, where I worked on the design and deployment of large-scale optimization algorithms for Google Technical Infrastructure and Google Ad Exchange. 
-								In 2016, I led the design and launched the multi-touch attribution product of <a href="http://www.krux.com" target="_blank">Krux</a> (now Salesforce Einstein).
-								In 2018, I joined the <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Machine Learning group at Microsoft Research NYC</a>, where I worked with Miroslav Dudik and Robert Schapire on reinforcement learning decomposition and off-policy evaluation for high-dimensional contextual bandits.
+								In 2014, I received a BSc and MSc in Electrical Engineering &amp; Computer Science from National Technical University of Athens (<a href="https://en.wikipedia.org/wiki/National_Technical_University_of_Athens" target="_blank">NTUA</a>), Greece, graduating with the highest GPA in NTUA's 200-year history. 
+								Between 2012 and 2015, I worked at <a href="http://research.google.com" target="_blank">Google Research</a>, focusing on the design and deployment of large-scale optimization algorithms for Google Technical Infrastructure and Google Ad Exchange. 
+								In 2016, I was a visiting researcher at <a href="http://www.krux.com" target="_blank">Krux</a> (now Salesforce Einstein), where I led the design of and launched the company's multi-touch attribution product. 
+								In 2018, I was a visiting researcher at <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Microsoft Research NYC</a>, where I worked with Miroslav Dudik and Robert Schapire on reinforcement learning and off-policy evaluation.
 								
 								<p align="justify">
-								I have been the recipient of the &quot;<a href="https://www.linkedin.com/in/nick-arvanitidis-332b541" target="_blank">Arvanitidis</a>&quot; <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank"> Stanford Graduate Fellowship</a> in Memory of <a href="https://en.wikipedia.org/wiki/William_Linvill" target="_blank">William K. Linvill</a>,
-								the <a href="http://www.onassis.org/en/" target="_blank">Onassis Foundation Graduate Fellowship</a>,
-								the Intel Honorary Award, the Google <a href="http://anitab.org/awards-grants/" target="_blank">Anita Borg Memorial Award</a>, the Google 
-								Excellence Award, and the Stanford Outstanding Academic Achievement Award.</p>
+								I have been the recipient of the Stanford Outstanding Academic Achievement Award in 2019 and 2016, 
+								the Forbes 30 Under 30 Greece in 2019, 
+								the "Arvanitidis" Stanford Doctoral Fellowship from 2015 to 2018,
+								the Onassis Foundation Doctoral Fellowship from 2015 to 2018,
+								the Intel Honorary Award in 2014,
+								the Google Women Techmakers Award in 2014
+								and the Google Excellence Award in 2013. 								
 								
 								<p align="justify">
 								I enjoy swimming, travelling across the world with great company, and exploring impressionist and surrealist art.</p>
@@ -93,7 +96,49 @@
 						</header>
 						<div class="feature-grid">
 		
-		
+<div class="feature">
+								<div class="image rounded">
+								  <img src="images/design.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Doubly Robust Off-Policy Evaluation with Shrinkage</h4>
+									</header>
+<p><i>Yi&nbsp;Su, Maria&nbsp;Dimakopoulou, <br>Akshay&nbsp;Krishnamurthy, Miroslav&nbsp;Dudik (ICML 2020)</i></p>
+We design a new family of estimators for off-policy evaluation in contextual bandits. 
+Our estimators are based on the asymptotically optimal approach of doubly robust estimation, 
+but they shrink importance weights to obtain a better bias-variance tradeoff in finite samples. 
+Our approach adapts importance weights to the quality of a reward predictor, interpolating 
+between doubly robust estimation and direct modeling. When the reward predictor is poor, 
+we recover previously studied weight clipping, but when the reward predictor is good, we 
+obtain a new form of shrinkage. Extensive experiments on bandit benchmark problems show that our 
+estimators are highly adaptive and typically outperform state-of-the-art methods.<br>
+[<a href="https://proceedings.icml.cc/static/paper_files/icml/2020/3992-Paper.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
+					
+
+<div class="feature">
+								<div class="image rounded">
+								  <img src="images/recs.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>ADMM SLIM: Sparse Recommendations for Many Users</h4>
+									</header>
+<p><i>Harald&nbsp;Steck, Maria&nbsp;Dimakopoulou, <br>Nickolai&nbsp;Riabov, Tony&nbsp;Jebara (WSDM 2020)</i></p>
+The Sparse Linear Method (SLIM) is a well-established approach for top-N recommendations. 
+This article proposes several improvements to SLIM that are enabled by the Alternating Directions
+Method of Multipliers (ADMM). 
+We evaluate our approach against the original SLIM and other state-of-the-art approaches on 
+three well-known data-sets.
+In our experiments, we find that not only our approach reduces training time considerably 
+but also achieves an up to 25% improvement in recommendation accuracy  due to better optimization. 
+Finally, we compare the approaches in experiments that simulate scenarios of cold-starting and large catalog sizes compared 
+to relatively small user base, which often occur in practice.<br>
+[<a href="assets/docs/WSDM2020.pdf">Paper</a>]
+</p>
+								</div>
+							</div>
 <div class="feature">
 								<div class="image rounded">
 								  <img src="images/slate.jpg" alt="" /></div>
@@ -104,15 +149,34 @@
 <p><i>Maria&nbsp;Dimakopoulou, Nikos&nbsp;Vlassis, Tony&nbsp;Jebara (IJCAI&nbsp;2019)</i></p>
 We introduce a new Thompson sampling-based algorithm, called marginal posterior sampling, for online slate bandits, that is characterized by three key ideas. 
 First, it postulates that the slate-level reward is a monotone function of the marginal unobserved rewards of the actions in the slate's slots, which it does not attempt to estimate. 
-Second, instead of maintaining a slate-level reward posterior, it maintains posterior distributions for the marginal reward of each slot's actions. 
+Second, it maintains posterior distributions for the marginal reward of each slot's actions rather than a slate-level reward posterior. 
 Third, it optimizes at the slot-level rather than the slate-level, which makes it computationally efficient. 
-We demonstrate substantial advantages of marginal posterior sampling over alternative approaches that are widely used in the domain of web services.<br>
-[<a href="assets/docs/IJCAI2019.pdf">Paper</a>]
+Simulation results show substantial advantages of marginal posterior sampling over state-of-the-art alternatives.<br>
+[<a href="https://www.ijcai.org/proceedings/2019/0308.pdf" target="_blank">Paper</a>]
+</p>
+								</div>
+							</div>
+
+
+<div class="feature">
+								<div class="image rounded">
+								  <img src="images/balanced.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Balanced Linear Contextual Bandits</h4>
+									</header>
+<p><i>Maria&nbsp;Dimakopoulou, Zhengyuan&nbsp;Zhou, Susan&nbsp;Athey, Guido&nbsp;Imbens (AAAI&nbsp;2019;&nbsp;oral)</i></p>
+Contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly 
+in the presence of rich heterogeneity or complex outcome models. 
+We develop algorithms for contextual bandits with linear payoffs that integrate balancing methods from the causal inference literature in their 
+estimation to make it less prone to problems of  bias. We prove that our algorithms match the state of the art regret bound guarantees. We demonstrate the strong practical advantage of balanced 
+contextual bandits on a large number of supervised learning datasets and on a synthetic example that simulates model misspecification and prejudice in the initial training data.<br>
+[<a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4221/4099" target="_blank">Paper</a>][<a href="assets/docs/AAAI2019_poster.pdf">Poster</a>]
 </p>
 								</div>
 							</div>
 							
-													<div class="feature">
+<div class="feature">
 								<div class="image rounded">
 								  <img src="images/design.jpg" alt="" /></div>
 								<div class="content">
@@ -129,11 +193,9 @@ parametrized class of control variates, we seek a
 control variate in that class that reduces the risk
 of the base estimator. We derive the population
 risk as a function of the class parameters and we
-discuss some approaches for optimizing this function.
+discuss approaches for optimizing this function.
 We present our main results in the context
-of multi-armed bandits, and we decribe a simple
-design for contextual bandits that gives rise
-to an estimator that is shown to perform well in
+of multi-armed bandits, and we decribe a contextual bandits estimator that is shown to perform well in
 multi-class cost-sensitive classification datasets.<br>
 [<a href="assets/docs/ICML2019.pdf">Paper</a>]
 </p>
@@ -141,23 +203,6 @@ multi-class cost-sensitive classification datasets.<br>
 							</div>
 				
 
-<div class="feature">
-								<div class="image rounded">
-								  <img src="images/balanced.jpg" alt="" /></div>
-								<div class="content">
-									<header>
-										<h4>Balanced Linear Contextual Bandits</h4>
-									</header>
-<p><i>Maria&nbsp;Dimakopoulou, Zhengyuan&nbsp;Zhou, Susan&nbsp;Athey, Guido&nbsp;Imbens (AAAI&nbsp;2019;&nbsp;oral)</i></p>
-Contextual bandit algorithms are sensitive to the estimation method of the outcome model as well as the exploration method used, particularly 
-in the presence of rich heterogeneity or complex outcome models. 
-We develop algorithms for contextual bandits with linear payoffs that integrate balancing methods from the causal inference literature in their 
-estimation to make it less prone to problems of  bias. We prove that our algorithms match the state of the art regret bound guarantees. We demonstrate the strong practical advantage of balanced 
-contextual bandits on a large number of supervised learning datasets and on a synthetic example that simulates model misspecification and prejudice in the initial training data.<br>
-[<a href="https://arxiv.org/pdf/1812.06227.pdf" target="_blank">Paper</a>][<a href="assets/docs/AAAI2019_poster.pdf">Poster</a>]
-</p>
-								</div>
-							</div>
 							
 													<div class="feature">
 								<div class="image rounded">
@@ -256,40 +301,6 @@ and low-complexity heuristic controls is probed via simulation.<br>
 						</div>
 					</div>
 				</section>
- <!-- teaching -->
-            <section id="teaching" class="wrapper special">
-                <div class="container" style="max-width: 1000px; line-height: 140%;">
-
-                    <header class="major special">
-                        <h2>News</h2>
-                    </header>
-
-<h4>10/9/2018</h4>
-<p>I defended my PhD thesis! <br> The committee of my defense was Benjamin Van Roy, Susan Athey, Emma Brunskill, Balaji Prabhakar and Guido Imbens. [<a href="images/defense.jpeg" target="_blank">Photo</a>]</p>
-
-					
-<h4>9/4/2018</h4>
-<p>The paper "Scalable Coordinated Exploration in Concurrent Reinforcement Learning" has been accepted to NIPS 2018.</p>
-					
-<h4>8/26/2018</h4>
-<p>A <a href="https://www.youtube.com/watch?v=kwvhfzbzb0o" target="_blank"> new demo</a> has been uploaded showcasing seed sampling with generalization from the paper <br> "Scalable Coordinated Exploration in Concurrent Reinforcement Learning".</p>
-					
-<h4>7/11/2018</h4>
-<p>The long talk I gave in ICML 2018 on "Coordinated Exploration in Concurrent Reinforcement Learning". [<a href="https://docs.google.com/presentation/d/1tKztxH5FaH2IRVtCu1escC3O51u26ok05A3xlSSwWAY/edit#slide=id.g3d32e7e0e3_0_129" target="_blank">Slides</a>] [<a href="https://www.facebook.com/icml.imls/videos/429761510871703/">Video</a>]</p>
-					
-<h4>5/25/2018</h4>
-<p>The slides from my seminar talk at Netflix can be found <a href="https://docs.google.com/presentation/d/1c9AFvRdpaLNvsUscZFVGCYUBnjbFrSM_QFEOCvttBqU/" target="_blank">here</a>.</p>
-					
-<h4>3/5/2018</h4>
-<p>An <a href="https://youtu.be/xjGK-wm0PkI" target="_blank"> animated demo</a> has been uploaded showcasing seed sampling from the paper <br> "Coordinated Exploration in Concurrent Reinforcement Learning".</p>
-
-<h4>2/2/2018</h4>
-<p>From June to September 2018, I will join the <a href="https://www.microsoft.com/en-us/research/group/machine-learning-nyc/" target="_blank">Machine Learning group at Microsoft Research NYC</a>.</p>
-
-
-            </section>
-
-
 			<!-- Four -->
 				<section id="four" class="wrapper style3 special">
 					<div class="container">
