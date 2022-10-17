@@ -56,15 +56,15 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 <div  id="about" class="6u$ 12u$(medium)">
 <p align="justify">
-	I am a Senior Manager of ML Engineering in the Home Personalization team at Spotify, 
-	leading a 15-people ML org, which spans ML engineering, ML research, backend engineering 
+	I am a Senior Manager of ML Engineering in the Home Personalization Product Area at Spotify, 
+	leading a 20-people ML org, which spans ML engineering, ML research, backend engineering 
 	and data engineering. The org I lead consists of 2 teams; Home Ranking which is responsible
-	for developing a unified relevance ranker for all content on their way to Spotify’s Homepage 
+	for developing a unified relevance ranker for all recommendations on Spotify’s Homepage 
 	and Home Assembly which is responsible for optimizing the personalized placement of organic 
 	and promotional content on Spotify’s Homepage surface. Both teams combine cutting-edge advances
-	in deep learning, causal inference and reinforcement learning with scalable engineering to 
-	deliver Spotify Home recommendations that optimize for the long-term satisfaction of the 400+ 
-	million Spotify users and is conducive to Spotify's business needs. 
+	in deep learning, multi-objective optimization, causal inference and reinforcement learning with 
+	scalable engineering to deliver Spotify Home recommendations that optimize for the long-term 
+	satisfaction of the 400+ million Spotify users and is conducive to Spotify's business needs. 
 
 
 <p align="justify">
@@ -98,6 +98,28 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 <div class="feature-grid">
 
+<div class="feature">								
+<div class="content">
+<header><h4>Society of Agents: Regrets Bounds of Concurrent Reinforcement Learning</h4></header>
+<p><i>Yan&nbspChen, Perry&nbspDong, Qinxun&nbspBai, Maria&nbspDimakopoulou, Wei&nbspXu, Zhengyuan&nbspZhou (NeurIPS 2022)</I></p>
+	<p>We consider the concurrent reinforcement learning problem where N agents simultaneously learn 
+	to make decisions in the same environment by sharing experience with each other. Existing works in
+	this emerging area have empirically demonstrated that Thompson sampling (TS) based algorithms 
+	provide a particularly attractive alternative for inducing cooperation, because each agent can 
+	independently sample a belief environment (and compute a corresponding optimal policy) from the 
+	joint posterior computed by aggregating all agents’ data , which induces diversity in exploration 
+	among agents while benefiting shared experience from all agents. However, theoretical guarantees in
+	this area remain under-explored; in particular, no regret bound is known on TS based concurrent RL 
+	algorithms. In this paper, we fill in this gap by considering two settings. In the first, we study
+	the simple finite-horizon episodic RL setting, where TS is naturally adapted into the concurrent setup
+	by having each agent sample from the current joint posterior at the beginning of each episode. In
+	the second setting, we consider the infinite-horizon RL problem, where a policy is measured by its long-run
+	average reward. For both settings, we establish a per-agent regret bound that decreases at an optimal rate of 
+	Θ(1/√Ν), which manifests the power of cooperation in concurrent RL.
+	</p>
+</div>
+</div>
+	
 <div class="feature">								
 <div class="content">
 <header><h4>Online Multi-Armed Bandits with Adaptive Inference</h4></header>
@@ -368,6 +390,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 <section id="news" class="wrapper style1 special">
 <div class="container" style="max-width: 1000px; line-height: 140%;">
 <header class="major special"><h2> News</h2></header>
+	<p>(Sep 22nd 2022) Co-organizer of RecSys 2022 REVEAL workshop on Reinforcement Learning for Recommender Systems.</p>
+	<p>(Mar 17th 2022) Invited speaker at the Women in Data Science (WiDS) conference giving a talk on "Causal Adaptive Learning".</p>
+	<p>(Jan 31st 2022) Joined Spotify as Senior Manager of ML Engineering in the Home Personalization Product Area.</p>
 	<p>(Dec 14th 2021) Co-organizer of the NeurIPS 2021 Causal Sequential Decisions workshop currently accepting submissions.</p>
 	<p>(Oct 25th 2021) Invited speaker at Hamsa Bastani's class at the Wharton School, University of Pennsylvania.</p>
 	<p>(Jul 23rd 2021) Invited speaker and panelist at the ICML 2021 RL4RealLife workshop giving a talk on "Estimation and Exploration Considerations for Practical RL".</p>
