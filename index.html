@@ -56,7 +56,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 <div  id="about" class="6u$ 12u$(medium)">
 <p align="justify">
-I am Director of Engineering at Uber leading a 50-people organization spanning Machine Learning, Economics, Backend and Data that is responsible for Pricing & Incentive Planning at Uber's Mobility Marketplace.
+I am Director of Engineering at Uber, where I lead the Marketplace Simulation & Planning (MSP) 50+ people organization that is responsible for planning pricing and incentives for riders & drivers in Uber’s Mobility business. My organization interfaces directly with Uber's Operations and Finance business functions and innovates in a range of Engineering & Science disciplines to determine prices and incentives globally across Uber's Mobility Marketplace: Deep Learning for forecasting, Causal Inference & Causal Machine Learning for pricing and incentive treatment effect estimation, Operations Research for large-scale optimization across the cities Uber operates in, Reinforcement Learning for long-term sequential decision making as well as Backend, ML Infrastructure & Data Engineering at scale.
 <p align="justify">
 Previously, I was Head of the Home Personalization Engineering organization at Spotify that is responsible for generating, ranking and distributing personalized content recommendations across music, podcasts and audiobooks on the Spotify’s homepage of 650+ million listeners. I also served as the Strategy Lead of Spotify's company bet on content discovery. Prior to Spotify, I was at Netflix, first driving causal ML initiatives and subsequently building and leading the Adaptive Experimentation working group, which was a cross-functional team of researchers, engineers and data scientists focused on delivering new experimentation capabilities at Netflix. Prior to Netflix, I did a PhD on reinforcement learning and causal inference at Stanford where I was advised by Benjamin Van Roy and Susan Athey and I worked at Google Research on the design and deployment of large-scale optimization algorithms for Google Technical Infrastructure and Google Ad Exchange. 
 <p align="justify">
@@ -73,6 +73,9 @@ I enjoy tennis, swimming, traveling around the world and exploring impressionist
 <section id="talks" class="wrapper style1 special">
 <div class="container" style="max-width: 1000px; line-height: 140%;">
 <header class="major special"><h2> External Talks & Workshops</h2></header>
+	<p>(Aug 10th 2026) Invited speaker at the International Conference on Econometrics and Statistics (EcoSta) 2026.</p>
+	<p>(May 13th 2026) Invited contributor at the MIT Workshop on "Aligning Superintelligence".</p>
+	<p>(Nov 13th 2025) Invited contributor at the MIT Workshop on "Evaluation for the Long-Term: Learnings from Industry".</p>
 	<p>(Oct 25th 2024) Keynote speaker at Industrial Recommendation Systems Workshop of ACM CIKM 2024.</p>
 	<p>(Aug 14th 2024) Invited speaker at the Bernoulli IMS Seminar of the 2024 World Congress in Probability and Statistics.</p>
 	<p>(Jun 6th 2024) Invited speaker at Intel 2024 MLCon Conference.</p>
@@ -117,8 +120,51 @@ I enjoy tennis, swimming, traveling around the world and exploring impressionist
 
 <div class="feature">								
 <div class="content">
+<header><h4>Concurrent Learning with Aggregated States via Randomized Least Squares Value Iteration</h4></header>
+<p><i>Chen, Bai, Zhang, Dong, <b>Dimakopoulou</b>, Sun, Zhou (ICML 2025)</I></p>
+	<p>Designing learning agents that explore efficiently 
+		in a complex environment has been widely recognized as a fundamental challenge in reinforcement
+learning. While a number of works have demonstrated the effectiveness of techniques based on
+randomized value functions on a single agent, it
+remains unclear, from a theoretical point of view,
+whether injecting randomization can help a society of agents concurently explore an environment.
+The theoretical results established in this work
+tender an affirmative answer to this question. We
+adapt the concurrent learning framework to randomized least-squares value iteration (RLSVI)
+with aggregated state representation. We demonstrate polynomial worst-case regret bounds in
+both finite- and infinite-horizon environments. Our algorithm exhibits
+significantly lower space complexity compared
+to prior contributions in this domain. Additionally, we conduct numerical experiments
+to demonstrate our theoretical findings.
+	<br>[<a href="https://arxiv.org/pdf/2501.13394" target="_blank">Paper</a>]
+	</p> 
+</div>
+</div>
+
+<div class="feature">								
+<div class="content">
+<header><h4>Calibrated Recommendations with Contextual Bandits</h4></header>
+<p><i>Feijer, Abdollahpouri, Gupta, Clare, Wen, Wasson, <b>Dimakopoulou</b>, Nazari, Kretschman, Lalmas (RecSys CONSEQUENCES 2025)</I></p>
+	<p>Spotify’s Home page features a variety of content types, including music, podcasts, 
+		and audiobooks. However, historical data is heavily skewed toward music, making it 
+		challenging to deliver a balanced and personalized content mix. Moreover, users’ 
+		preference towards different content types may vary depending on the time of day, 
+		the day of week, or even the device they use. We propose a calibration method that 
+		leverages contextual bandits to dynamically learn each user’s optimal content type 
+		distribution based on their context and preferences. Unlike traditional calibration 
+		methods that rely on historical averages, our approach boosts engagement by adapting
+		to how users interests in different content types varies across contexts. Both offline 
+		and online results demonstrate improved precision and user engagement with the Spotify 
+		Home page, in particular with under-represented content types such as podcasts.
+	<br>[<a href="https://arxiv.org/pdf/2501.13394" target="_blank">Paper</a>]
+	</p> 
+</div>
+</div>
+	
+<div class="feature">								
+<div class="content">
 <header><h4>Evaluating the Surrogate Index as a Decision-Making Tool Using 200 A/B Tests at Netflix</h4></header>
-<p><i>Vickie&nbspZhang, Michael&nbspZhao, Anh&nbspLe, Maria&nbspDimakopoulou, Nathan&nbspKallus (CODE 2023)</I></p>
+<p><i>Zhang, Zhao, Le, <b>Dimakopoulou</b>, Kallus (CODE 2023)</I></p>
 	<p>Surrogate index approaches have recently become a popular method of estimating longer-term impact
 from shorter-term outcomes. In this paper, we leverage 1098 test arms from 200 A/B tests at Netflix
 to empirically investigate to what degree would decisions made using a surrogate index utilizing 14 days
@@ -128,7 +174,7 @@ outcome of interest, we find that the statistical inferences that we would draw 
 index are ~95% consistent with those from directly measuring the long-term treatment effect. Moreover,
 when we restrict ourselves to the set of tests that would be “launched” (i.e. positive and statistically
 significant) based on the 63-day directly measured treatment effects, we find that relying instead on the
-surrogate index achieves 79% and 65% recall.. 
+surrogate index achieves 79% and 65% recall.
 	<br>[<a href="https://arxiv.org/pdf/2311.11922" target="_blank">Paper</a>]
 	</p> 
 </div>
@@ -137,8 +183,8 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">								
 <div class="content">
 <header><h4>Calibrated Recommendations as a Minimum-Cost Flow Problem</h4></header>
-<p><i>Himan&nbspAbdollahpouri, Zahra&nbspNazari, Alex&nbspGain, Clay&nbspGibson, Maria&nbspDimakopoulou, 
-	Jesse&nbspAnderton, Benjamin&nbspCarterette, Mounia&nbspLalmas, Tony&nbspJebara (WSDM 2023)</I></p>
+<p><i>Abdollahpouri, Nazari, Gain, Gibson, <b>Dimakopoulou</b>, 
+	Anderton, Carterette, Lalmas, Jebara (WSDM 2023)</I></p>
 	<p>Calibration in recommender systems has recently gained significant attention. In the recommended
 	list of items, calibration ensures that the various (past) areas of interest of a user are reflected
 	with their corresponding proportions. For instance, if a user has watched, say, 80 romance movies and
@@ -158,7 +204,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">								
 <div class="content">
 <header><h4>Society of Agents: Regrets Bounds of Concurrent Reinforcement Learning</h4></header>
-<p><i>Yan&nbspChen, Perry&nbspDong, Qinxun&nbspBai, Maria&nbspDimakopoulou, Wei&nbspXu, Zhengyuan&nbspZhou (NeurIPS 2022)</I></p>
+<p><i>Chen, Dong, Bai, <b>Dimakopoulou</b>, Xu, Zhou (NeurIPS 2022)</I></p>
 	<p>We consider the concurrent reinforcement learning problem where N agents simultaneously learn 
 	to make decisions in the same environment by sharing experience with each other. Existing works in
 	this emerging area have empirically demonstrated that Thompson sampling (TS) based algorithms 
@@ -179,7 +225,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">								
 <div class="content">
 <header><h4>Online Multi-Armed Bandits with Adaptive Inference</h4></header>
-<p><i>Maria&nbspDimakopoulou, Zhimei&nbspRen, Zhengyuan&nbspZhou (NeurIPS 2021)</I></p>
+<p><i><b>Dimakopoulou</b>, Ren, Zhou (NeurIPS 2021)</I></p>
 	<p>During online decision making in Multi-Armed Bandits, one needs to conduct inference
 	on the true mean reward of each arm based on data collected so far at each step. However, since
 	the arms are adaptively selected–thereby yielding non-iid data–conducting inference accurately
@@ -202,7 +248,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">
 <div class="content">
 <header><h4>Post-Contextual-Bandit Inference</h4></header>
-<p><i>Aurélien&nbspBibaut, Maria&nbspDimakopoulou, Nathan&nbspKallus, Antoine&nbspChambaz, Mark&nbspvan&nbspder&nbspLaan (NeurIPS 2021)</I></p>
+<p><i>Bibaut, <b>Dimakopoulou</b>, Kallus, Chambaz, van&nbspder&nbspLaan (NeurIPS 2021)</I></p>
 	<p>The adaptive nature
 	of the data collected by contextual bandit algorithms, however, makes inference difficult: 
 	standard estimators are no longer asymptotically normally distributed and
@@ -223,7 +269,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">					
 <div class="content">
 <header><h4>Risk Minimization from Adaptively Collected Data</h4></header>
-<p><i>Aurélien&nbspBibaut, Nathan&nbspKallus, Maria&nbspDimakopoulou, Antoine&nbspChambaz, Mark&nbspvan&nbspder&nbspLaan (NeurIPS 2021)</I></p>
+<p><i>Bibaut, Kallus, <b>Dimakopoulou</b>, Chambaz, van&nbspder&nbspLaan (NeurIPS 2021)</I></p>
 	<p>Empirical risk minimization (ERM) is the workhorse of machine learning, whether
 	for classification and regression or for off-policy learning, but its model-agnostic 
 	guarantees can fail when we use adaptively collected data. We study a generic importance
@@ -245,7 +291,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">					
 <div class="content">
 <header><h4>Sequential Causal Inference in a Single World of Connected Units</h4></header>
-<p><i>Aurélien&nbspBibaut, Maya&nbspPetersen, Nikos&nbspVlassis, Maria&nbspDimakopoulou, Mark&nbspvan&nbspder&nbspLaan (arXiv preprint)</i></p>
+<p><i>Bibaut, Petersen, Vlassis,<b>Dimakopoulou</b>, van&nbspder&nbspLaan (arXiv preprint)</i></p>
 	<p>We consider adaptive designs for a trial involving multiple individuals, where the variables of one individual depend on its past and
 	on the past of other individuals. Our goal is to learn a mean outcome, averaged across
 	the individuals, that we would observe if we carried out a given sequence of counterfactual interventions for several time steps.
@@ -260,7 +306,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">
 <div class="content">
 <header><h4>Doubly Robust Off-Policy Evaluation with Shrinkage</h4></header>
-<p><i>Yi&nbsp;Su, Maria&nbsp;Dimakopoulou, <br>Akshay&nbsp;Krishnamurthy, Miroslav&nbsp;Dudik (ICML 2020)</i></p>
+<p><i>Su, <b>Dimakopoulou</b>, Krishnamurthy, Dudik (ICML 2020)</i></p>
 	<p>We design a new family of estimators for off-policy evaluation in contextual bandits. 
 	Our estimators are based on the asymptotically optimal approach of doubly robust estimation, 
 	but they shrink importance weights to obtain a better bias-variance tradeoff in finite samples. 
@@ -277,7 +323,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">
 <div class="content">
 <header><h4>ADMM SLIM: Sparse Recommendations for Many Users</h4></header>
-<p><i>Harald&nbsp;Steck, Maria&nbsp;Dimakopoulou, <br>Nickolai&nbsp;Riabov, Tony&nbsp;Jebara (WSDM 2020)</i></p>
+<p><i>Steck, <b>Dimakopoulou</b>, Riabov, Jebara (WSDM 2020)</i></p>
 	<p>The Sparse Linear Method (SLIM) is a well-established approach for top-N recommendations. 
 	This article proposes several improvements to SLIM that are enabled by the Alternating Directions
 	Method of Multipliers (ADMM). We evaluate our approach against the original SLIM and other state-of-the-art approaches on 
@@ -293,7 +339,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">
 <div class="content">
 <header><h4>Marginal Posterior Sampling for Slate Bandits</h4></header>
-<p><i>Maria&nbsp;Dimakopoulou, Nikos&nbsp;Vlassis, Tony&nbsp;Jebara (IJCAI&nbsp;2019)</i></p>
+<p><i><b>Dimakopoulou</b>, Vlassis, Jebara (IJCAI&nbsp;2019)</i></p>
 	<p>We introduce a new Thompson sampling-based algorithm, called marginal posterior sampling, 
 	for online slate bandits, that is characterized by three key ideas. First, it postulates 
 	that the slate-level reward is a monotone function of the marginal unobserved rewards of 
@@ -310,7 +356,7 @@ surrogate index achieves 79% and 65% recall..
 <div class="feature">
 <div class="content">
 <header><h4>Balanced Linear Contextual Bandits</h4></header>
-<p><i>Maria&nbsp;Dimakopoulou, Zhengyuan&nbsp;Zhou, Susan&nbsp;Athey, Guido&nbsp;Imbens (AAAI&nbsp;2019;&nbsp;oral)</i></p>
+<p><i><b>Dimakopoulou</b>, Zhou, Athey, Imbens (AAAI&nbsp;2019;&nbsp;oral)</i></p>
 	<p>Contextual bandit algorithms are sensitive to the estimation method of the outcome model as 
 	well as the exploration method used, particularly in the presence of rich heterogeneity or 
 	complex outcome models. We develop algorithms for contextual bandits that
